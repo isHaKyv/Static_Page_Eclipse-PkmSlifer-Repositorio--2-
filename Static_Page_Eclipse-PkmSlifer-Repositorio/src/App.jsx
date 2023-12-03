@@ -13,6 +13,7 @@ import ShippingForm from "./Components/Organismos/ShippingForm";
 import Acerca from "./Components/Pages/Acerca";
 import Contacto from "./Components/Pages/Contacto";
 import Servicios from "./Components/Pages/Servicios";
+import Administrador from "./Components/Pages/administrador";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/acerca" element={<Acerca/>}/>
           <Route path="/contacto" element={<Contacto/>}/>
           <Route path="/servicios" element={<Servicios/>}/>
+          <Route path="/administrador" element={<Administrador/>}/>
           <Route path="/" element={<Juntador />} />
         </Routes>
       </div>  
