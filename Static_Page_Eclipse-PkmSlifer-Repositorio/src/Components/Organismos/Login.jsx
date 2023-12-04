@@ -15,10 +15,19 @@ const Login = () => {
       return;
     }
 
-    // Aquí puedes realizar la lógica de autenticación si es necesario
+    // Aquí deberías realizar la lógica de autenticación.
+    // Puedes comparar el correo electrónico y la contraseña con los valores esperados.
 
-    // Redirigir al usuario a la vista de compra después de iniciar sesión
-    navigate("/checkout");
+    const expectedEmail = "SliferAdmin@gmail.com";
+    const expectedPassword = "SliferPapu#1234";
+
+    if (email === expectedEmail && password === expectedPassword) {
+      // Si la autenticación es exitosa, redirige a la vista de administrador
+      navigate("/administrador");
+    } else {
+      // Si la autenticación falla, muestra un mensaje de error o realiza otra lógica necesaria
+      alert("Credenciales incorrectas. Por favor, inténtalo de nuevo.");
+    }
   };
 
   const handleRegisterClick = () => {
