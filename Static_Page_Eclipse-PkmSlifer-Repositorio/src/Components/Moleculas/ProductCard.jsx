@@ -18,7 +18,7 @@ function ProductCard({ imageSrc, alt, productName, price }) {
     localStorage.setItem(`producto`, JSON.stringify(product));
 
     // Utiliza el método navigate para redirigir a la vista de detalle del producto
-    navigate(`/products/${productName}`);  // Cambiado a navigate
+    navigate(`/products/${productName}`);
   };
 
   return (

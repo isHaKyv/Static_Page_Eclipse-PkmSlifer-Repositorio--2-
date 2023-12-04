@@ -26,20 +26,15 @@ function PokemonProductList() {
 
   return (
     <div>
-      <NavBar /> {/* Agrega el NavBar al principio del componente */}
-      
+      <NavBar /> 
       <div className="custom-product-list">
         <Slider {...settings}>
           <div>
             <img src={bannerImage} alt="Banner" className="product-list-banner" />
           </div>
-          {/* Puedes agregar más banners según sea necesario */}
         </Slider>
-
         <CustomText className="product-list-title">Productos Pokemon</CustomText>
-
         <div className="custom-subtitle">Pokemon</div>
-
         <div className="custom-product-row">
           {pokemonProducts.map((product, index) => (
             <ProductCard
